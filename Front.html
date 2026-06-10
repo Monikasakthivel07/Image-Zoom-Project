@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Tracking Zoom</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Landing Page -->
+    <div class="container">
+        <h1>Hand Tracking Image Zoom</h1>+
+        <p>Control the image zoom using your hand!</p>
+        <button id="start-btn">Start Experience</button>
+    </div>
+
+    <!-- Experience Section (Initially Hidden) -->
+    <div id="experience">
+        <video id="video-feed" autoplay></video>
+        <img id="zoom-image" src="background.jpg" alt="Zoomable Image">
+    </div>
+
+    <script src="mediapipe/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+
+</body>
+</html>
